@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>React Hello World</title>
+</head>
+<body>
+	<div id="application-root"></div>
+	<script
+		src="https://unpkg.com/babel-standalone@6/babel.min.js">
+	</script>
+	<script
+		src="https://unpkg.com/react@16/umd/react.development.js">
+	</script>
+	<script
+		src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+	</script>
+	<script type="text/babel">
+		function App(props) {
+			return (
+				<div>
+					<header>
+				      {props.children}
+				      <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Picture of Sally Student" width="150"></img>
+				      <address>
+				        <span>Email: </span><a href="mailto:sallystudent@email.com">sallystudent@email.com</a><br></br><span>Phone Number: </span><a href="tel:+19366770987">(936) 677-0987</a> 
+				      </address>
+				    </header>
+				    <main>
+				      <section>
+				        <h2>Education</h2>
+				        <p>Oxford University - BA in Philosophy, Politics and Economics (2012 - 2015)</p>
+				        <p>International School of Manila (2008 - 2012)</p>
+				      </section>
+				      <section>
+				        <h2>Employment History</h2>
+				        <h3>Coleman - Team Lead (03/2017 - Present)</h3>
+				        <ul>
+				          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+				          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+				        </ul>
+				        <h3>Guidepoint - Project Manager (09/2016 - 02/2017)</h3>
+				        <ul>
+				          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+				          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+				        </ul>
+				        <h3>GLG - Associate (06/2015 - 08/2016)</h3>
+				        <ul>
+				          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+				          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+				        </ul>
+				      </section>
+				    </main>
+				</div>
+			);
+		};
+
+		ReactDOM.render(
+			<App>
+				<h1>Sally Student</h1>
+			</App>, 
+			document.querySelector('#application-root')
+		);
+	</script>
+</body>
+</html>
